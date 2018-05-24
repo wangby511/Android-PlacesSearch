@@ -1,0 +1,56 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:height="100dp">
+    <!--android:onClick="goToDetail"-->
+
+    <!-- 定义一个用于显示头像的ImageView -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="64dp"
+        android:layout_weight="0.2"
+        android:baselineAlignBottom="true"
+        android:paddingLeft="0dp" />
+
+    <LinearLayout
+        android:layout_width="247dp"
+        android:layout_height="64dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favorite_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:baselineAlignBottom="true">
+
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>
